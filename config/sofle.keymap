@@ -52,18 +52,18 @@
 
         Default {
             bindings = <
-&kp ESC         &kp N1     &kp N2        &kp N3     &kp N4                  &kp N5             &kp UP_ARROW     &kp N6  &kp N7     &kp N8             &kp N9   &kp N0    &kp DELETE
-&kp TAB         &kp Q      &kp W         &kp E      &kp R                   &kp T              &kp DOWN_ARROW   &kp Y   &kp U      &kp I              &kp O    &kp P     &kp BACKSPACE
-&kp LEFT_SHIFT  &kp A      &kp S         &kp D      &kp F                   &kp G              &kp LEFT_ARROW   &kp H   &kp J      &kp K              &kp L    &kp SEMI  &kp RIGHT_SHIFT
-&mo 1           &kp Z      &kp X         &kp C      &kp V                   &kp B              &kp RIGHT_ARROW  &kp N   &kp M      &kp COMMA          &kp DOT  &kp FSLH  &lt 1 ENTER
-&kp C_MUTE      &kp LCTRL  &kp LEFT_ALT  &kp LSHFT  &mt LEFT_COMMAND SPACE  &lt 1 LS(SPACE)    &kp ENTER        &mo 1   &kp ENTER  &kp RIGHT_COMMAND  &tog 2   &mo 3
+&kp ESC         &kp N1     &kp N2        &kp N3     &kp N4                  &kp N5             &kp UP_ARROW     &kp N6           &kp N7     &kp N8           &kp N9             &kp N0    &kp MINUS
+&kp TAB         &kp Q      &kp W         &kp E      &kp R                   &kp T              &kp DOWN_ARROW   &kp Y            &kp U      &kp I            &kp O              &kp P     &kp BACKSPACE
+&kp LEFT_SHIFT  &kp A      &kp S         &kp D      &kp F                   &kp G              &kp LEFT_ARROW   &kp H            &kp J      &kp K            &kp L              &kp SEMI  &kp RIGHT_SHIFT
+&mo 1           &kp Z      &kp X         &kp C      &kp V                   &kp B              &kp RIGHT_ARROW  &kp N            &kp M      &kp COMMA        &kp DOT            &kp FSLH  &lt 1 ENTER
+&kp C_MUTE      &kp LCTRL  &kp LEFT_ALT  &kp LSHFT  &mt LEFT_COMMAND SPACE  &lt 1 LS(SPACE)    &kp ENTER        &lt 2 BACKSPACE  &kp ENTER  &kp RIGHT_SHIFT  &kp RIGHT_COMMAND  &tog 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            display-name = "Def0";
         };
 
-        Special {
+        Symbols {
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8             &kp F9    &kp F10           &trans
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &trans             &kp HOME  &kp MINUS         &kp EQUAL
@@ -72,21 +72,21 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans             &trans    &trans
             >;
 
-            display-name = "layer1";
+            display-name = "Sym1";
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
-        Nav {
+        Navigation {
             bindings = <
-&kp TILDE  &trans      &trans     &trans     &trans     &trans    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8    &kp F9    &kp F10    &trans
-&trans     &trans      &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans    &mmv MOVE_DOWN   &trans  &trans  &kp F11   &kp F12   &kp UNDER  &kp PLUS
-&trans     &trans      &trans     &trans     &trans     &trans    &mmv MOVE_LEFT   &trans  &trans  &trans    &trans    &kp LBRC   &kp RBRC
-&trans     &sys_reset  &trans     &trans     &trans     &trans    &mmv MOVE_RIGHT  &trans  &trans  &kp UP    &trans    &trans     &trans
-&trans     &trans      &trans     &trans     &trans     &trans    &mkp LCLK        &to 0   &trans  &kp LEFT  &kp DOWN  &kp RIGHT
+&kp TILDE  &trans      &trans     &trans     &trans     &trans    &mmv MOVE_UP     &kp F6  &kp F7    &kp F8    &kp F9    &kp F10    &trans
+&trans     &trans      &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans    &mmv MOVE_DOWN   &trans  &trans    &kp F11   &kp F12   &trans     &trans
+&trans     &trans      &trans     &trans     &trans     &trans    &mmv MOVE_LEFT   &trans  &trans    &trans    &trans    &trans     &trans
+&trans     &sys_reset  &trans     &trans     &trans     &trans    &mmv MOVE_RIGHT  &trans  &kp HOME  &kp UP    &kp END   &trans     &trans
+&trans     &trans      &trans     &trans     &trans     &trans    &mkp LCLK        &to 0   &trans    &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            label = "layer2";
+            label = "Nav2";
         };
 
         System {
