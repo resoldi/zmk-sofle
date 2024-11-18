@@ -63,7 +63,7 @@ layers:
   - layer1
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: layer2, h: toggle}
-  - $$mdi:apple-keyboard-command$$
+  - {t: layer2, h: toggle}
   - Layer3
   layer1:
   - {t: '`', s: '~'}
