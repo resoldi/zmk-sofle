@@ -262,4 +262,4 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [61, 62, 63]
-  k: {t: Nav2, h: toggle}
+  k: {t: Def0, h: toggle}

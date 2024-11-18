@@ -629,8 +629,8 @@ rect.held, rect.combo.held {
 <path d="M728,257 l-37,2" class="combo"/>
 <path d="M728,257 l37,2" class="combo"/>
 <rect rx="6" ry="6" x="714" y="244" width="28" height="26" class="combo"/>
-<a href="#Nav2">
-<text x="728" y="257" class="combo tap layer-activator">Nav2</text>
+<a href="#Def0">
+<text x="728" y="257" class="combo tap layer-activator">Def0</text>
 </a><text x="728" y="268" class="combo hold">toggle</text>
 </g>
 </g>
@@ -993,8 +993,8 @@ rect.held, rect.combo.held {
 <path d="M728,257 l-37,2" class="combo"/>
 <path d="M728,257 l37,2" class="combo"/>
 <rect rx="6" ry="6" x="714" y="244" width="28" height="26" class="combo"/>
-<a href="#Nav2">
-<text x="728" y="257" class="combo tap layer-activator">Nav2</text>
+<a href="#Def0">
+<text x="728" y="257" class="combo tap layer-activator">Def0</text>
 </a><text x="728" y="268" class="combo hold">toggle</text>
 </g>
 </g>
@@ -1331,8 +1331,8 @@ rect.held, rect.combo.held {
 <path d="M728,257 l-37,2" class="combo"/>
 <path d="M728,257 l37,2" class="combo"/>
 <rect rx="6" ry="6" x="714" y="244" width="28" height="26" class="combo"/>
-<a href="#Nav2">
-<text x="728" y="257" class="combo tap layer-activator">Nav2</text>
+<a href="#Def0">
+<text x="728" y="257" class="combo tap layer-activator">Def0</text>
 </a><text x="728" y="268" class="combo hold">toggle</text>
 </g>
 </g>
@@ -1678,8 +1678,8 @@ rect.held, rect.combo.held {
 <path d="M728,257 l-37,2" class="combo"/>
 <path d="M728,257 l37,2" class="combo"/>
 <rect rx="6" ry="6" x="714" y="244" width="28" height="26" class="combo"/>
-<a href="#Nav2">
-<text x="728" y="257" class="combo tap layer-activator">Nav2</text>
+<a href="#Def0">
+<text x="728" y="257" class="combo tap layer-activator">Def0</text>
 </a><text x="728" y="268" class="combo hold">toggle</text>
 </g>
 </g>
