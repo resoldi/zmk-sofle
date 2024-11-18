@@ -42,7 +42,7 @@
         compatible = "zmk,combos";
 
         arrow_active {
-            bindings = <&tog 2>;
+            bindings = <&tog 0>;
             key-positions = <61 62 63>;
         };
     };
