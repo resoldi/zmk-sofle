@@ -93,10 +93,10 @@ layers:
   - UNDO
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
+  - '&hm LEFT_COMMAND'
+  - '&hm LALT'
+  - '&hm LCTRL'
+  - '&hm LSHIFT'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:apple-keyboard-caps$$
