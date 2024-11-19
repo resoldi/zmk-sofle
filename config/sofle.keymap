@@ -39,14 +39,7 @@
         tap-ms = <30>;
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        arrow_active {
-            bindings = <&tog 0>;
-            key-positions = <61 62 63>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
