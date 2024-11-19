@@ -77,11 +77,11 @@
 
         Nav {
             bindings = <
-&trans      &kp F1            &kp F2    &kp F3     &kp F4      &kp F5    &mmv MOVE_UP     &kp F6        &kp F7         &kp F8      &kp F9     &kp F10     &trans
-&trans      &trans            &trans    &trans     &trans      &trans    &mmv MOVE_DOWN   &kp K_REDO    &kp K_PASTE    &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
-&trans      &kp LEFT_COMMAND  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &mmv MOVE_LEFT   &kp CAPSLOCK  &kp LEFT       &kp DOWN    &kp UP     &kp RIGHT   &trans
-&trans      &trans            &trans    &trans     &trans      &trans    &mmv MOVE_RIGHT  &kp INSERT    &kp HOME       &kp PG_DN   &kp PG_UP  &kp END     &trans
-&kp C_MUTE  &trans            &trans    &trans     &trans      &trans    &mkp LCLK        &kp ENTER     &kp BACKSPACE  &kp DELETE  &trans     &trans
+&trans      &kp F1            &kp F2    &kp F3     &kp F4      &kp F5    &mmv MOVE_UP     &kp F6         &kp F7          &kp F8      &kp F9         &kp F10        &trans
+&trans      &trans            &trans    &trans     &trans      &trans    &mmv MOVE_DOWN   &kp C_AC_REDO  &kp C_AC_PASTE  &kp UP      &kp C_AC_COPY  &kp C_AC_UNDO  &trans
+&trans      &kp LEFT_COMMAND  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &mmv MOVE_LEFT   &kp CAPSLOCK   &kp LEFT        &kp DOWN    &kp RIGHT      &kp C_AC_CUT   &trans
+&trans      &trans            &trans    &trans     &trans      &trans    &mmv MOVE_RIGHT  &kp INSERT     &kp HOME        &kp PG_DN   &kp PG_UP      &kp END        &trans
+&kp C_MUTE  &trans            &trans    &trans     &trans      &trans    &mkp LCLK        &kp ENTER      &kp BACKSPACE   &kp DELETE  &trans         &trans
             >;
 
             display-name = "Nav";
