@@ -91,8 +91,8 @@
         Mouse {
             bindings = <
 &trans  &trans    &trans     &trans    &trans      &trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans
-&trans  &trans    &trans     &trans    &trans      &trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans
-&trans  &kp LALT  &kp LCTRL  &kp LGUI  &kp LSHIFT  &trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans
+&trans  &trans    &trans     &trans    &trans      &trans    &trans  &trans     &trans     &kp I      &trans  &trans  &trans
+&trans  &kp LALT  &kp LCTRL  &kp LGUI  &kp LSHIFT  &trans    &trans  &trans     &kp J      &kp K      &kp L   &trans  &trans
 &trans  &trans    &trans     &trans    &trans      &trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans
 &trans  &trans    &trans     &trans    &trans      &trans    &trans  &mkp RCLK  &mkp LCLK  &mkp MCLK  &trans  &trans
             >;
