@@ -33,7 +33,7 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -77,11 +77,11 @@
 
         Nav {
             bindings = <
-&trans      &kp F1            &kp F2    &kp F3          &kp F4         &kp F5          &mmv MOVE_UP     &kp F6         &kp F7         &kp F8      &kp F9         &kp F10        &trans
-&trans      &trans            &trans    &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT    &mmv MOVE_DOWN   &kp C_AC_REDO  &kp HOME       &kp UP      &kp END        &kp C_AC_UNDO  &trans
-&trans      &kp LEFT_COMMAND  &kp LALT  &kp LCTRL       &kp LSHIFT     &trans          &mmv MOVE_LEFT   &kp CAPSLOCK   &kp LEFT       &kp DOWN    &kp RIGHT      &kp C_AC_CUT   &trans
-&trans      &trans            &trans    &trans          &trans         &trans          &mmv MOVE_RIGHT  &kp LANG1      &kp PAGE_UP    &kp PG_DN   &kp PAGE_DOWN  &kp END        &trans
-&kp C_MUTE  &trans            &trans    &trans          &trans         &trans          &mkp LCLK        &kp ENTER      &kp BACKSPACE  &kp DELETE  &trans         &trans
+&trans      &kp F1    &kp F2     &kp F3     &kp F4      &kp F5       &mmv MOVE_UP     &kp F6         &kp F7         &kp F8      &kp F9         &kp F10        &trans
+&trans      &trans    &trans     &kp LG(V)  &kp LG(C)   &kp LG(X)    &mmv MOVE_DOWN   &kp C_AC_REDO  &kp HOME       &kp UP      &kp END        &kp C_AC_UNDO  &trans
+&trans      &kp LALT  &kp LCTRL  &kp LGUI   &kp LSHIFT  &trans       &mmv MOVE_LEFT   &kp CAPSLOCK   &kp LEFT       &kp DOWN    &kp RIGHT      &kp C_AC_CUT   &trans
+&trans      &trans    &trans     &trans     &trans      &trans       &mmv MOVE_RIGHT  &kp LANG1      &kp PAGE_UP    &kp PG_DN   &kp PAGE_DOWN  &kp END        &trans
+&kp C_MUTE  &trans    &trans     &trans     &trans      &trans       &mkp LCLK        &kp ENTER      &kp BACKSPACE  &kp DELETE  &trans         &trans
             >;
 
             display-name = "Nav";
@@ -90,11 +90,11 @@
 
         Mouse {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &mkp RCLK  &mkp LCLK  &mkp MCLK  &trans  &trans
+&trans  &trans    &trans     &trans    &trans      &trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans
+&trans  &trans    &trans     &trans    &trans      &trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans
+&trans  &kp LALT  &kp LCTRL  &kp LGUI  &kp LSHIFT  &trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans
+&trans  &trans    &trans     &trans    &trans      &trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans
+&trans  &trans    &trans     &trans    &trans      &trans    &trans  &mkp RCLK  &mkp LCLK  &mkp MCLK  &trans  &trans
             >;
 
             label = "Mouse";
@@ -104,7 +104,7 @@
             bindings = <
 &trans  &trans      &trans     &trans      &trans       &trans        &trans  &trans      &trans       &trans      &trans     &trans      &trans
 &trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &trans  &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
-&trans  &kp LGUI    &kp LALT   &kp LCTRL   &kp LSHFT    &trans        &trans  &trans      &kp RSHFT    &kp RCTRL   &kp RALT   &kp RGUI    &trans
+&trans  &kp LALT    &kp LCTRL  &kp LGUI    &kp LSHFT    &trans        &trans  &trans      &kp RSHFT    &kp RGUI    &kp RCTRL  &kp RALT    &trans
 &trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &trans  &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
 &trans  &trans      &trans     &mkp MCLK   &mkp LCLK    &mkp RCLK     &trans  &mkp RCLK   &mkp LCLK    &mkp MCLK   &trans     &trans
             >;
@@ -114,11 +114,11 @@
 
         Media {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans             &trans           &trans           &trans        &trans        &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &trans        &trans        &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &ext_power EP_TOG  &kp C_FF         &kp C_VOL_DN     &kp C_VOL_UP  &kp C_PREV    &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &out OUT_TOG       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans             &trans           &trans           &trans        &trans
+&trans  &trans    &trans     &trans    &trans     &trans    &trans  &trans             &trans           &trans           &trans        &trans        &trans
+&trans  &trans    &trans     &trans    &trans     &trans    &trans  &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &trans        &trans        &trans
+&trans  &kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &trans    &trans  &ext_power EP_TOG  &kp C_FF         &kp C_VOL_DN     &kp C_VOL_UP  &kp C_PREV    &trans
+&trans  &trans    &trans     &trans    &trans     &trans    &trans  &out OUT_TOG       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &trans
+&trans  &trans    &trans     &trans    &trans     &trans    &trans  &trans             &trans           &trans           &trans        &trans
             >;
 
             label = "Media";
@@ -126,11 +126,11 @@
 
         Num {
             bindings = <
-&trans  &trans     &trans  &trans      &trans  &trans       &mmv MOVE_UP     &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &kp LBKT   &kp N7  &kp N8      &kp N9  &kp RBKT     &mmv MOVE_DOWN   &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &kp SEMI   &kp N4  &kp N5      &kp N6  &kp EQUAL    &mmv MOVE_LEFT   &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
-&trans  &kp GRAVE  &kp N1  &kp N2      &kp N3  &kp BSLH     &mmv MOVE_RIGHT  &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &trans     &trans  &kp PERIOD  &kp N0  &kp MINUS    &mkp LCLK        &trans  &trans     &trans     &trans    &trans
+&trans  &trans     &trans  &trans      &trans  &trans       &mmv MOVE_UP     &trans  &trans     &trans    &trans     &trans    &trans
+&trans  &kp LBKT   &kp N7  &kp N8      &kp N9  &kp RBKT     &mmv MOVE_DOWN   &trans  &trans     &trans    &trans     &trans    &trans
+&trans  &kp SEMI   &kp N4  &kp N5      &kp N6  &kp EQUAL    &mmv MOVE_LEFT   &trans  &kp RSHFT  &kp RGUI  &kp RCTRL  &kp RALT  &trans
+&trans  &kp GRAVE  &kp N1  &kp N2      &kp N3  &kp BSLH     &mmv MOVE_RIGHT  &trans  &trans     &trans    &trans     &trans    &trans
+&trans  &trans     &trans  &kp PERIOD  &kp N0  &kp MINUS    &mkp LCLK        &trans  &trans     &trans    &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -139,11 +139,11 @@
 
         Sym {
             bindings = <
-&trans  &trans          &trans           &trans                &trans                &trans       &trans  &trans  &trans           &trans     &trans    &trans             &trans
-&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS  &kp RBRC     &trans  &trans  &trans           &trans     &trans    &trans             &trans
-&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET             &kp PLUS     &trans  &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RALT  &kp RIGHT_COMMAND  &trans
-&trans  &kp TILDE       &kp EXCLAMATION  &kp AT                &kp HASH              &kp PIPE     &trans  &trans  &trans           &trans     &trans    &trans             &trans
-&trans  &trans          &trans           &kp LEFT_PARENTHESIS  &kp RPAR              &kp UNDER    &trans  &trans  &trans           &trans     &trans    &trans
+&trans  &trans          &trans           &trans                &trans                &trans       &trans  &trans  &trans           &trans    &trans     &trans    &trans
+&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS  &kp RBRC     &trans  &trans  &trans           &trans    &trans     &trans    &trans
+&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET             &kp PLUS     &trans  &trans  &kp RIGHT_SHIFT  &kp RGUI  &kp RCTRL  &kp RALT  &trans
+&trans  &kp TILDE       &kp EXCLAMATION  &kp AT                &kp HASH              &kp PIPE     &trans  &trans  &trans           &trans    &trans     &trans    &trans
+&trans  &trans          &trans           &kp LEFT_PARENTHESIS  &kp RPAR              &kp UNDER    &trans  &trans  &trans           &trans    &trans     &trans
             >;
 
             label = "Sym";
