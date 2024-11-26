@@ -7,7 +7,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - $$mdi:pan-up$$
+  - Ctl+ $$mdi:arrow-up-bold$$
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -33,7 +33,7 @@ layers:
   - D
   - F
   - G
-  - $$mdi:pan-left$$
+  - Ctl+ $$mdi:arrow-left-bold$$
   - H
   - J
   - K
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - '&msc SCLR_RIGHT'
+  - Ctl+ $$mdi:arrow-right-bold$$
   - N
   - M
   - {t: ',', s: <}
