@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - $$mdi:pan-down$$
+  - Ctl+ $$mdi:arrow-down-bold$$
   - Y
   - U
   - I
@@ -28,7 +28,7 @@ layers:
   - P
   - {t: '=', s: +}
   - $$mdi:apple-keyboard-control$$
-  - A
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - S
   - D
   - F
@@ -38,10 +38,10 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
+  - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - .
   - $$mdi:apple-keyboard-shift$$
-  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
+  - Z
   - X
   - C
   - V
@@ -51,7 +51,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, h: '$$mdi:apple-keyboard-shift$$', s: '?'}
+  - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
@@ -60,7 +60,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: Num}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - RETURN
+  - {t: RETURN, h: RGUI}
   - {t: '$$mdi:backspace$$', type: backspace}
   - Sym
   - $$mdi:apple-keyboard-command$$
@@ -96,7 +96,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
+  - LGUI
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:apple-keyboard-caps$$
@@ -520,3 +520,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [60, 56]
+  k: Sft+ $$mdi:keyboard-space$$
