@@ -33,19 +33,19 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <170>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
 
-        hml: Homerow_mods_layer {
+        hl: Homerow_layer {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <180>;
+            flavor = "balanced";
+            tapping-term-ms = <170>;
         };
     };
 
@@ -64,11 +64,11 @@
 
         Base {
             bindings = <
-&kp C_POWER     &kp N1        &kp N2            &kp N3         &kp N4        &kp N5        &msc SCRL_UP     &kp N6        &kp N7            &kp N8         &kp N9             &kp N0         &kp MINUS
-&kp TAB         &kp Q         &kp W             &kp E          &kp R         &kp T         &msc SCRL_DOWN   &kp Y         &kp U             &kp I          &kp O              &kp P          &kp BACKSPACE
-&kp LCTRL       &hm LALT A    &hm LCTRL S       &hm LGUI D     &hm LSHIFT F  &kp G         &msc SCRL_LEFT   &kp H         &hm RSHIFT J      &hm RGUI K     &hm RCTRL L        &hm RALT SEMI  &kp APOS
-&kp LEFT_SHIFT  &hml 3 Z      &kp X             &kp C          &kp V         &kp B         &msc SCLR_RIGHT  &kp N         &kp M             &kp COMMA      &kp DOT            &hml 3 SLASH   &kp RSHIFT
-&kp C_MUTE      &kp LEFT_ALT  &kp LEFT_COMMAND  &hml 4 ESCAPE  &hml 1 SPACE  &hml 2 TAB    &kp ENTER        &hml 6 ENTER  &hml 5 BACKSPACE  &hml 7 DELETE  &kp RIGHT_COMMAND  &tog 3
+&kp C_POWER     &kp N1        &kp N2            &kp N3        &kp N4     &kp N5       &msc SCRL_UP     &kp N6      &kp N7         &kp N8     &kp N9             &kp N0            &kp MINUS
+&kp TAB         &kp Q         &kp W             &kp E         &kp R      &kp T        &msc SCRL_DOWN   &kp Y       &kp U          &kp I      &kp O              &kp P             &kp EQUAL
+&kp LCTRL       &kp A         &kp S             &kp D         &kp F      &kp G        &msc SCRL_LEFT   &kp H       &kp J          &kp K      &kp L              &kp SEMI          &kp APOS
+&kp LEFT_SHIFT  &hm LSHIFT Z  &kp X             &kp C         &kp V      &kp B        &msc SCLR_RIGHT  &kp N       &kp M          &kp COMMA  &kp DOT            &hm RSHIFT SLASH  &kp RSHIFT
+&kp C_MUTE      &kp LEFT_ALT  &kp LEFT_COMMAND  &hl 1 ESCAPE  &kp SPACE  &hl 2 TAB    &kp ENTER        &kp RETURN  &kp BACKSPACE  &mo 3      &kp RIGHT_COMMAND  &tog 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -77,24 +77,49 @@
 
         Nav {
             bindings = <
-&trans      &kp F1    &kp F2     &kp F3     &kp F4      &kp F5       &mmv MOVE_UP     &kp F6        &kp F7         &kp F8      &kp F9         &kp F10  &trans
-&trans      &trans    &kp LG(X)  &kp LG(C)  &kp LG(V)   &kp LG(X)    &mmv MOVE_DOWN   &trans        &kp HOME       &kp UP      &kp END        &trans   &trans
-&trans      &kp LALT  &kp LCTRL  &kp LGUI   &kp LSHIFT  &trans       &mmv MOVE_LEFT   &kp CAPSLOCK  &kp LEFT       &kp DOWN    &kp RIGHT      &trans   &trans
-&trans      &trans    &trans     &trans     &trans      &trans       &mmv MOVE_RIGHT  &kp LANG1     &kp PAGE_UP    &trans      &kp PAGE_DOWN  &trans   &trans
-&kp C_MUTE  &trans    &trans     &trans     &trans      &trans       &mkp LCLK        &kp ENTER     &kp BACKSPACE  &kp DELETE  &trans         &trans
+&trans      &kp F1          &kp F2           &kp F3             &kp F4     &kp F5      &mmv MOVE_UP     &kp F6        &kp F7         &kp F8      &kp F9         &kp F10  &trans
+&trans      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOUBLE_QUOTES  &kp LBKT   &kp RBKT    &mmv MOVE_DOWN   &trans        &kp HOME       &kp UP      &kp END        &trans   &trans
+&trans      &kp LSHFT       &kp LCTRL        &kp LALT           &sk LGUI   &kp ESC     &mmv MOVE_LEFT   &kp CAPSLOCK  &kp LEFT       &kp DOWN    &kp RIGHT      &trans   &trans
+&trans      &kp LG(Z)       &kp LG(X)        &kp LG(C)          &kp LG(V)  &trans      &mmv MOVE_RIGHT  &kp LANG1     &kp PAGE_UP    &trans      &kp PAGE_DOWN  &trans   &trans
+&kp C_MUTE  &trans          &trans           &trans             &trans     &trans      &mkp LCLK        &kp ENTER     &kp BACKSPACE  &kp DELETE  &trans         &trans
             >;
 
             display-name = "Nav";
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
+        Num {
+            bindings = <
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &out OUT_TOG    &mmv MOVE_UP     &trans   &trans  &trans  &trans    &trans     &trans
+&trans  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5          &mmv MOVE_DOWN   &kp F11  &kp N7  &kp N8  &kp N9    &kp MINUS  &trans
+&trans  &kp LSHFT     &kp LCTRL     &kp LALT      &kp LGUI    &kp EQUAL       &mmv MOVE_LEFT   &kp F12  &kp N4  &kp N5  &kp N6    &kp EQUAL  &trans
+&trans  &kp F6        &kp F7        &kp F8        &kp F9      &kp F10         &mmv MOVE_RIGHT  &kp F13  &kp N1  &kp N2  &kp N3    &trans     &trans
+&trans  &trans        &trans        &trans        &kp SPACE   &trans          &mkp LCLK        &trans   &trans  &kp N0  &kp LEFT  &kp RIGHT
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+            label = "Num";
+        };
+
+        Sym {
+            bindings = <
+&trans  &trans                &trans                 &trans                &trans        &trans       &trans  &trans    &trans    &trans    &trans     &trans     &trans
+&trans  &kp EXCL              &kp AT                 &kp HASH              &kp DLLR      &kp PRCNT    &trans  &kp LBKT  &kp RBKT  &kp DQT   &kp APOS   &kp UNDER  &trans
+&trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp STAR              &kp AMPS      &kp CARET    &trans  &trans    &kp RGUI  &kp RALT  &kp RCTRL  &kp RSHFT  &trans
+&trans  &kp TILDE             &kp EXCLAMATION        &kp AT                &kp QUESTION  &kp PIPE     &trans  &trans    &trans    &kp LT    &kp GT     &kp QMARK  &trans
+&trans  &trans                &trans                 &kp LEFT_PARENTHESIS  &kp RPAR      &kp UNDER    &trans  &trans    &trans    &trans    &trans     &trans
+            >;
+
+            label = "Sym";
+        };
+
         Mouse {
             bindings = <
-&trans  &trans    &trans     &trans    &trans      &trans    &trans  &trans     &trans          &trans          &trans  &trans  &trans
-&trans  &trans    &trans     &trans    &trans      &trans    &trans  &trans     &trans          &mmv MOVE_UP    &trans  &trans  &trans
-&trans  &kp LALT  &kp LCTRL  &kp LGUI  &kp LSHIFT  &trans    &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans  &trans
-&trans  &trans    &trans     &trans    &trans      &trans    &trans  &trans     &trans          &trans          &trans  &trans  &trans
-&trans  &trans    &trans     &trans    &trans      &trans    &trans  &mkp RCLK  &mkp LCLK       &mkp MCLK       &trans  &trans
+&trans  &trans    &trans     &trans    &trans      &trans    &trans  &trans     &trans          &trans          &trans           &trans  &trans
+&trans  &trans    &trans     &trans    &trans      &trans    &trans  &trans     &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&trans  &kp LALT  &kp LCTRL  &kp LGUI  &kp LSHIFT  &trans    &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans    &trans     &trans    &trans      &trans    &trans  &trans     &trans          &trans          &trans           &trans  &trans
+&trans  &trans    &trans     &trans    &trans      &trans    &trans  &mkp RCLK  &mkp LCLK       &mkp MCLK       &trans           &trans
             >;
 
             label = "Mouse";
@@ -122,31 +147,6 @@
             >;
 
             label = "Media";
-        };
-
-        Num {
-            bindings = <
-&trans  &trans     &trans  &trans      &trans  &trans       &mmv MOVE_UP     &trans  &trans     &trans    &trans     &trans    &trans
-&trans  &kp LBKT   &kp N7  &kp N8      &kp N9  &kp RBKT     &mmv MOVE_DOWN   &trans  &trans     &trans    &trans     &trans    &trans
-&trans  &kp SEMI   &kp N4  &kp N5      &kp N6  &kp EQUAL    &mmv MOVE_LEFT   &trans  &kp RSHFT  &kp RGUI  &kp RCTRL  &kp RALT  &trans
-&trans  &kp GRAVE  &kp N1  &kp N2      &kp N3  &kp BSLH     &mmv MOVE_RIGHT  &trans  &trans     &trans    &trans     &trans    &trans
-&trans  &trans     &trans  &kp PERIOD  &kp N0  &kp MINUS    &mkp LCLK        &trans  &trans     &trans    &trans     &trans
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-            label = "Num";
-        };
-
-        Sym {
-            bindings = <
-&trans  &trans          &trans           &trans                &trans                &trans       &trans  &trans  &trans           &trans    &trans     &trans    &trans
-&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS  &kp RBRC     &trans  &trans  &trans           &trans    &trans     &trans    &trans
-&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET             &kp PLUS     &trans  &trans  &kp RIGHT_SHIFT  &kp RGUI  &kp RCTRL  &kp RALT  &trans
-&trans  &kp TILDE       &kp EXCLAMATION  &kp AT                &kp HASH              &kp PIPE     &trans  &trans  &trans           &trans    &trans     &trans    &trans
-&trans  &trans          &trans           &kp LEFT_PARENTHESIS  &kp RPAR              &kp UNDER    &trans  &trans  &trans           &trans    &trans     &trans
-            >;
-
-            label = "Sym";
         };
 
         Func {
