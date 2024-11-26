@@ -523,3 +523,5 @@ layers:
 combos:
 - p: [60, 56]
   k: Sft+ $$mdi:keyboard-space$$
+- p: [27, 56]
+  k: Sft+ $$mdi:keyboard-space$$
