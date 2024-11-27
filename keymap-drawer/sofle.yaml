@@ -33,20 +33,20 @@ layers:
   - D
   - F
   - G
-  - Ctl+ $$mdi:arrow-left-bold$$
+  - Ctl+ $$mdi:arrow-right-bold$$
   - H
   - J
   - K
   - L
   - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - .
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-esc$$
   - Z
   - X
   - C
   - V
   - B
-  - Ctl+ $$mdi:arrow-right-bold$$
+  - Ctl+ $$mdi:arrow-left-bold$$
   - N
   - M
   - {t: ',', s: <}
@@ -58,7 +58,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-esc$$', h: Nav}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', h: LGUI}
+  - {t: '$$mdi:keyboard-tab$$', h: Num}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: RETURN, h: Sym}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -253,7 +253,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -521,7 +521,5 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [60, 56]
-  k: Sft+ $$mdi:keyboard-space$$
 - p: [27, 56]
   k: Sft+ $$mdi:keyboard-space$$
