@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - .
-  - $$mdi:keyboard-esc$$
+  - $$mdi:apple-keyboard-option$$
   - Z
   - X
   - C
@@ -56,9 +56,9 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-esc$$', h: Nav}
+  - LGUI
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', h: Num}
+  - Nav
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: RETURN, h: Sym}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -121,9 +121,9 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -253,7 +253,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
