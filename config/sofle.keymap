@@ -81,11 +81,11 @@
 
         Base {
             bindings = <
-&kp C_POWER  &kp N1        &kp N2            &kp N3    &kp N4     &kp N5    &kp LC(UP)     &kp N6        &kp N7         &kp N8     &kp N9             &kp N0           &kp MINUS
-&kp TAB      &kp Q         &kp W             &kp E     &kp R      &kp T     &kp LC(DOWN)   &kp Y         &kp U          &kp I      &kp O              &kp P            &kp EQUAL
-&kp LCTRL    &hm LSHIFT A  &kp S             &kp D     &kp F      &kp G     &kp LC(RIGHT)  &kp H         &kp J          &kp K      &kp L              &hm RSHIFT SEMI  &kp APOS
-&kp LALT     &kp Z         &kp X             &kp C     &kp V      &kp B     &kp LC(LEFT)   &kp N         &kp M          &kp COMMA  &kp DOT            &kp SLASH        &kp RSHIFT
-&kp C_MUTE   &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LGUI  &kp SPACE  &mo 1     &kp ENTER      &hl 2 RETURN  &kp BACKSPACE  &mo 2      &kp RIGHT_COMMAND  &tog 1
+&kp C_POWER  &kp N1        &kp N2            &kp N3  &kp N4     &kp N5    &kp LC(UP)     &kp N6        &kp N7         &kp N8     &kp N9             &kp N0           &kp MINUS
+&kp ESCAPE   &kp Q         &kp W             &kp E   &kp R      &kp T     &kp LC(DOWN)   &kp Y         &kp U          &kp I      &kp O              &kp P            &kp EQUAL
+&kp TAB      &hm LSHIFT A  &kp S             &kp D   &kp F      &kp G     &kp LC(RIGHT)  &kp H         &kp J          &kp K      &kp L              &hm RSHIFT SEMI  &kp APOS
+&mo 4        &kp Z         &kp X             &kp C   &kp V      &kp B     &kp LC(LEFT)   &kp N         &kp M          &kp COMMA  &kp DOT            &kp SLASH        &kp RSHIFT
+&kp C_MUTE   &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 3   &kp SPACE  &mo 1     &kp ENTER      &hl 2 RETURN  &kp BACKSPACE  &mo 2      &kp RIGHT_COMMAND  &tog 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -94,11 +94,11 @@
 
         Nav {
             bindings = <
-&trans      &kp F1          &kp F2           &kp F3             &kp F4     &kp F5      &mmv MOVE_UP     &kp F6        &kp F7         &kp F8      &kp F9         &kp F10  &trans
-&trans      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOUBLE_QUOTES  &kp LBKT   &kp RBKT    &mmv MOVE_DOWN   &trans        &kp HOME       &kp UP      &kp END        &trans   &trans
-&trans      &kp LSHFT       &kp LCTRL        &kp LALT           &kp LGUI   &kp ESC     &mmv MOVE_LEFT   &kp CAPSLOCK  &kp LEFT       &kp DOWN    &kp RIGHT      &trans   &trans
-&trans      &kp LG(Z)       &kp LG(X)        &kp LG(C)          &kp LG(V)  &trans      &mmv MOVE_RIGHT  &kp LANG1     &kp PAGE_UP    &trans      &kp PAGE_DOWN  &trans   &trans
-&kp C_MUTE  &trans          &trans           &trans             &trans     &trans      &mkp LCLK        &kp ENTER     &kp BACKSPACE  &kp DELETE  &trans         &trans
+&trans       &kp F1     &kp F2     &kp F3     &kp F4     &kp F5           &mmv MOVE_UP     &kp F6        &kp F7         &kp F8      &kp F9         &kp F10  &trans
+&trans       &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp RBKT         &mmv MOVE_DOWN   &trans        &kp HOME       &kp UP      &kp END        &trans   &trans
+&kp LS(TAB)  &sk LSHFT  &sk LCTRL  &sk LALT   &sk LGUI   &kp LS(SPACE)    &mmv MOVE_LEFT   &kp CAPSLOCK  &kp LEFT       &kp DOWN    &kp RIGHT      &trans   &trans
+&trans       &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans           &mmv MOVE_RIGHT  &kp LANG1     &kp PAGE_UP    &trans      &kp PAGE_DOWN  &trans   &trans
+&kp C_MUTE   &trans     &trans     &trans     &trans     &trans           &mkp LCLK        &kp ENTER     &kp BACKSPACE  &kp DELETE  &trans         &trans
             >;
 
             display-name = "Nav";
@@ -107,11 +107,11 @@
 
         Sym {
             bindings = <
-&trans  &trans                &trans                 &trans                &trans        &trans       &trans  &trans    &trans    &trans    &trans     &trans     &trans
-&trans  &kp EXCL              &kp AT                 &kp HASH              &kp DLLR      &kp PRCNT    &trans  &kp LBKT  &kp RBKT  &kp DQT   &kp APOS   &kp UNDER  &trans
-&trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp STAR              &kp AMPS      &kp CARET    &trans  &trans    &kp RGUI  &kp RALT  &kp RCTRL  &kp RSHFT  &trans
-&trans  &kp TILDE             &kp EXCLAMATION        &kp AT                &kp QUESTION  &kp PIPE     &trans  &trans    &trans    &kp LT    &kp GT     &kp QMARK  &trans
-&trans  &trans                &trans                 &kp LEFT_PARENTHESIS  &kp RPAR      &kp UNDER    &trans  &trans    &trans    &trans    &trans     &trans
+&trans  &trans                &trans                 &trans                &trans        &trans       &trans  &trans     &trans    &trans    &trans     &trans     &trans
+&trans  &kp EXCL              &kp AT                 &kp HASH              &kp DLLR      &kp PRCNT    &trans  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR   &kp RPAR   &trans
+&trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp STAR              &kp AMPS      &kp CARET    &trans  &trans     &kp RGUI  &kp RALT  &kp RCTRL  &kp RSHFT  &trans
+&trans  &kp TILDE             &kp EXCLAMATION        &kp AT                &kp QUESTION  &kp PIPE     &trans  &trans     &trans    &kp LT    &kp GT     &kp QMARK  &trans
+&trans  &trans                &trans                 &kp LEFT_PARENTHESIS  &kp RPAR      &kp UNDER    &trans  &trans     &trans    &trans    &trans     &trans
             >;
 
             label = "Sym";
