@@ -107,11 +107,11 @@
 
         Sym {
             bindings = <
-&trans  &trans     &trans           &trans    &trans        &trans           &trans  &trans     &trans    &trans             &trans     &trans     &trans
-&trans  &kp EXCL   &kp AT           &kp HASH  &kp DLLR      &kp PRCNT        &trans  &kp CARET  &kp AMPS  &kp STAR           &kp LPAR   &kp RPAR   &trans
-&trans  &sk LSHFT  &sk LCTRL        &sk LALT  &sk LGUI      &kp CARET        &trans  &trans     &kp RGUI  &kp DOUBLE_QUOTES  &kp COLON  &kp RSHFT  &trans
-&trans  &kp TILDE  &kp EXCLAMATION  &kp AT    &kp QUESTION  &kp PIPE         &trans  &trans     &trans    &kp LT             &kp GT     &kp QMARK  &trans
-&trans  &trans     &trans           &trans    &trans        &kp LS(SPACE)    &trans  &trans     &trans    &trans             &trans     &trans
+&trans     &trans     &trans     &trans     &trans     &trans           &trans  &trans            &trans             &trans             &trans     &trans     &trans
+&kp TILDE  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT        &trans  &kp CARET         &kp AMPS           &kp STAR           &kp LPAR   &kp RPAR   &kp UNDERSCORE
+&trans     &sk LSHFT  &sk LCTRL  &sk LALT   &sk LGUI   &trans           &trans  &trans            &kp RGUI           &kp DOUBLE_QUOTES  &kp COLON  &kp RSHFT  &kp EQUAL
+&trans     &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp F2           &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LT             &kp GT     &kp QMARK  &trans
+&trans     &trans     &trans     &trans     &trans     &kp LS(SPACE)    &trans  &trans            &trans             &trans             &trans     &trans
             >;
 
             label = "Sym";
