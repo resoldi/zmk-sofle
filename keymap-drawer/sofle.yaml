@@ -7,7 +7,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - Ctl+ $$mdi:arrow-up-bold$$
+  - Ctl+$$mdi:arrow-up-bold$$
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - Ctl+ $$mdi:arrow-down-bold$$
+  - Ctl+$$mdi:arrow-down-bold$$
   - Y
   - U
   - I
@@ -28,17 +28,17 @@ layers:
   - P
   - {t: '=', s: +}
   - $$mdi:keyboard-tab$$
-  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+  - A
   - S
-  - D
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - F
   - G
-  - Ctl+ $$mdi:arrow-right-bold$$
+  - Ctl+$$mdi:arrow-right-bold$$
   - H
   - J
-  - K
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - L
-  - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
+  - {t: ;, s: ':'}
   - .
   - Mouse
   - Z
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - Ctl+ $$mdi:arrow-left-bold$$
+  - Ctl+$$mdi:arrow-left-bold$$
   - N
   - M
   - {t: ',', s: <}
@@ -80,11 +80,11 @@ layers:
   - F10
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+ Q
-  - Gui+ W
-  - Gui+ E
-  - Gui+ R
-  - Gui+ T
+  - Gui+Q
+  - Gui+W
+  - Gui+E
+  - Gui+R
+  - Gui+T
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
   - HOME
@@ -93,9 +93,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-tab-reverse$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -103,7 +103,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - Gui+ L
+  - Gui+L
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
@@ -113,9 +113,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - PG DN
-  - Ctl+ $$mdi:arrow-left-bold$$
-  - Ctl+ $$mdi:arrow-down-bold$$
-  - Ctl+ $$mdi:arrow-right-bold$$
+  - Ctl+$$mdi:arrow-left-bold$$
+  - Ctl+$$mdi:arrow-down-bold$$
+  - Ctl+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
@@ -188,7 +188,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+ $$mdi:keyboard-space$$
+  - Sft+$$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -318,7 +318,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+$$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-left-click-outline$$
@@ -347,10 +347,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+ V
-  - Gui+ C
-  - Gui+ X
-  - Gui+ Z
+  - Gui+V
+  - Gui+C
+  - Gui+X
+  - Gui+Z
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
@@ -373,10 +373,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+ V
-  - Gui+ C
-  - Gui+ X
-  - Gui+ Z
+  - Gui+V
+  - Gui+C
+  - Gui+X
+  - Gui+Z
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -522,4 +522,4 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [27, 56]
-  k: Sft+ $$mdi:keyboard-space$$
+  k: Sft+$$mdi:keyboard-space$$
