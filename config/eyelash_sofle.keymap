@@ -42,9 +42,9 @@
         tap-ms = <30>;
     };
 
-    hm: hm {
+    thk: thk {
         compatible = "zmk,behavior-hold-tap";
-        label = "HM";
+        label = "tap-hold key";
         bindings = <&mt>, <&kp>;
 
         #binding-cells = <2>;
@@ -53,9 +53,9 @@
         flavor = "tap-unless-interrupted";
     };
 
-    hl: hl {
+    thl: thl {
         compatible = "zmk,behavior-hold-tap";
-        label = "HL";
+        label = "tap-hold layer";
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
@@ -68,11 +68,11 @@
 
         Base {
             bindings = <
-&kp C_POWER  &kp N1     &kp N2    &kp N3     &kp N4           &kp N5            &kp LC(UP)     &kp N6             &kp N7           &kp N8     &kp N9   &kp N0         &kp MINUS
-&kp ESCAPE   &kp Q      &kp W     &kp E      &kp R            &kp T             &kp LC(DOWN)   &kp Y              &kp U            &kp I      &kp O    &kp P          &kp EQUAL
-&kp TAB      &kp A      &kp S     &kp D      &kp F            &kp G             &kp LC(RIGHT)  &kp H              &kp J            &kp K      &kp L    &kp SEMICOLON  &kp APOS
-&kp LSHFT    &kp Z      &kp X     &kp C      &kp V            &kp B             &kp LC(LEFT)   &kp N              &kp M            &kp COMMA  &kp DOT  &kp SLASH      &mo 0
-&kp C_MUTE   &kp LCTRL  &kp LALT  &kp LSHFT  &hl 1 LS(SPACE)  &hm LGUI SPACE    &kp ENTER      &hm RSHIFT RETURN  &hl 2 BACKSPACE  &kp RGUI   &trans   &trans
+&kp C_POWER  &kp N1     &kp N2    &kp N3     &kp N4            &kp N5             &kp LC(UP)     &kp N6              &kp N7            &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp ESCAPE   &kp Q      &kp W     &kp E      &kp R             &kp T              &kp LC(DOWN)   &kp Y               &kp U             &kp I      &kp O     &kp P          &kp EQUAL
+&kp TAB      &kp A      &kp S     &kp D      &kp F             &kp G              &kp LC(RIGHT)  &kp H               &kp J             &kp K      &kp L     &kp SEMICOLON  &kp APOS
+&kp LSHFT    &kp Z      &kp X     &kp C      &kp V             &kp B              &kp LC(LEFT)   &kp N               &kp M             &kp COMMA  &kp DOT   &kp SLASH      &kp BACKSLASH
+&kp C_MUTE   &kp LCTRL  &kp LALT  &kp LSHFT  &thl 1 LS(SPACE)  &thk LGUI SPACE    &kp ENTER      &thk RSHIFT RETURN  &thl 2 BACKSPACE  &kp RCTRL  &kp RALT  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -93,11 +93,11 @@
 
         Num_Sym {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp LBKT  &kp RIGHT_BRACKET  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans
             >;
 
             label = "Num";
