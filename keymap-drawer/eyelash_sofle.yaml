@@ -1,6 +1,6 @@
 layers:
   Base:
-  - $$mdi:power-standby$$
+  - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -12,7 +12,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '-', s: _}
+  - $$mdi:power-standby$$
   - $$mdi:keyboard-esc$$
   - Q
   - W
@@ -25,7 +25,7 @@ layers:
   - I
   - O
   - P
-  - {t: '=', s: +}
+  - {t: '-', s: _}
   - $$mdi:keyboard-tab$$
   - A
   - S
