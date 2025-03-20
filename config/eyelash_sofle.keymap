@@ -97,10 +97,10 @@
 &trans       &trans  &trans  &trans  &trans          &trans     &trans           &trans    &trans    &trans  &trans     &trans
             >;
 
-            label = "Nav";
+            label = "Nav/Fn";
         };
 
-        Num_Sym {
+        Symbol {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans             &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp LBKT  &kp RIGHT_BRACKET  &trans
@@ -109,7 +109,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans
             >;
 
-            label = "Num";
+            label = "Sym";
             sensor-bindings = <&inc_dec_kp 0 0>;
         };
     };
