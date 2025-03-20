@@ -102,11 +102,11 @@
 
         Symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp LPAR  &kp RPAR  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans
+&trans  &trans    &trans  &trans    &trans    &trans       &trans  &trans     &trans    &trans    &trans    &trans     &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &trans  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR   &kp UNDER
+&trans  &trans    &trans  &trans    &trans    &trans       &trans  &trans     &kp APOS  &kp DQT   &kp LBKT  &kp RBKT   &kp FSLH
+&trans  &trans    &trans  &trans    &trans    &trans       &trans  &trans     &trans    &kp LT    &kp GT    &kp QMARK  &trans
+&trans  &trans    &trans  &trans    &trans    &trans       &trans  &trans     &trans    &trans    &trans    &trans
             >;
 
             label = "Sym";
