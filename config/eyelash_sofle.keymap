@@ -65,6 +65,13 @@
         flavor = "balanced";
     };
 
+    new_behavior: new_behavior {
+        compatible = "zmk,behavior-tap-dance";
+        label = "NEW_BEHAVIOR";
+        #binding-cells = <0>;
+        bindings = <&kp LCTRL>, <&kp LALT>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
