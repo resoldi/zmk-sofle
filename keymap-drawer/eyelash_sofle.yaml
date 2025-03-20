@@ -57,15 +57,15 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - '&new_behavior'
-  - {t: 'Sft+$$mdi:keyboard-space$$', h: Nav}
+  - {t: 'Sft+$$mdi:keyboard-space$$', h: Nav/Fn}
   - {t: '$$mdi:keyboard-space$$', h: '&mt LGUI'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: RETURN, h: '&mt RSHIFT'}
-  - {t: '$$mdi:backspace$$', h: Num}
+  - {t: '$$mdi:backspace$$', h: Sym}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
-  Nav:
+  Nav/Fn:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -130,7 +130,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Num:
+  Sym:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
