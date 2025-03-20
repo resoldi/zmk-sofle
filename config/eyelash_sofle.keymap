@@ -3,11 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/rgb.h>
 
 /*
 
@@ -38,53 +34,54 @@
             delay-ms = <0>;                   //   10
         };
 
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <30>;
-       };
+            tap-ms = <30>;
+        };
 
-    thk: thk {
-        compatible = "zmk,behavior-hold-tap";
-        label = "tap-hold key";
-        bindings = <&mt>, <&kp>;
+        modtap: modtap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "tap-hold key";
+            bindings = <&kp>, <&kp>;
 
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick-tap-ms = <170>;
-        flavor = "tap-preferred";
-       };
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <170>;
+            flavor = "tap-preferred";
+        };
 
-    thl: thl {
-        compatible = "zmk,behavior-hold-tap";
-        label = "tap-hold layer";
-        bindings = <&mo>, <&kp>;
+        layertap: layertap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "tap-hold layer";
+            bindings = <&mo>, <&kp>;
 
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick-tap-ms = <175>;
-        flavor = "balanced";
-       };
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+        };
 
-    new_behavior: new_behavior {
-        compatible = "zmk,behavior-tap-dance";
-        label = "NEW_BEHAVIOR";
-        #binding-cells = <0>;
-        bindings = <&kp LCTRL>, <&kp LALT>;
-       };
-};
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL>, <&kp LALT>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         Base {
             bindings = <
-&kp GRAVE   &kp N1     &kp N2    &kp N3         &kp N4            &kp N5                 &kp LC(UP_ARROW)     &kp N6              &kp N7            &kp N8     &kp N9    &kp N0         &kp C_POWER
-&kp ESCAPE  &kp Q      &kp W     &kp E          &kp R             &kp T                  &kp LC(DOWN_ARROW)   &kp Y               &kp U             &kp I      &kp O     &kp P          &kp MINUS
-&kp TAB     &kp A      &kp S     &kp D          &kp F             &kp G                  &kp LC(RIGHT_ARROW)  &kp H               &kp J             &kp K      &kp L     &kp SEMICOLON  &kp APOS
-&kp LSHFT   &kp Z      &kp X     &kp C          &kp V             &kp B                  &kp LC(LEFT_ARROW)   &kp N               &kp M             &kp COMMA  &kp DOT   &kp SLASH      &kp BACKSLASH
-&kp C_MUTE  &kp LCTRL  &kp LALT  &new_behavior  &thl 1 LS(SPACE)  &thk LEFT_GUI SPACE    &kp ENTER            &thk RSHIFT RETURN  &thl 2 BACKSPACE  &kp RCTRL  &kp RALT  &trans
+&kp GRAVE   &kp N1     &kp N2    &kp N3         &kp N4                 &kp N5                    &kp LC(UP_ARROW)     &kp N6                 &kp N7                 &kp N8     &kp N9    &kp N0         &kp C_POWER
+&kp ESCAPE  &kp Q      &kp W     &kp E          &kp R                  &kp T                     &kp LC(DOWN_ARROW)   &kp Y                  &kp U                  &kp I      &kp O     &kp P          &kp MINUS
+&kp TAB     &kp A      &kp S     &kp D          &kp F                  &kp G                     &kp LC(RIGHT_ARROW)  &kp H                  &kp J                  &kp K      &kp L     &kp SEMICOLON  &kp APOS
+&kp LSHFT   &kp Z      &kp X     &kp C          &kp V                  &kp B                     &kp LC(LEFT_ARROW)   &kp N                  &kp M                  &kp COMMA  &kp DOT   &kp SLASH      &kp BACKSLASH
+&kp C_MUTE  &kp LCTRL  &kp LALT  &new_behavior  &layertap 1 LS(SPACE)  &modtap LEFT_GUI SPACE    &kp ENTER            &modtap RSHIFT RETURN  &layertap 2 BACKSPACE  &kp RCTRL  &kp RALT  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
