@@ -56,7 +56,7 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-shift$$
+  - '&new_behavior'
   - {t: 'Sft+$$mdi:keyboard-space$$', h: Nav}
   - {t: '$$mdi:keyboard-space$$', h: '&mt LGUI'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
