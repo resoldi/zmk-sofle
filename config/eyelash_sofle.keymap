@@ -77,7 +77,7 @@
 
         Base {
             bindings = <
-&kp GRAVE   &kp N1     &kp N2    &kp N3         &kp N4                 &kp N5                    &kp LC(UP_ARROW)     &kp N6                 &kp N7                 &kp N8     &kp N9    &kp N0         &kp C_POWER
+&kp GRAVE   &kp N1     &kp N2    &kp N3         &kp N4                 &kp N5                    &kp LC(UP_ARROW)     &kp N6                 &kp N7                 &kp N8     &kp N9    &kp N0         &kp PLUS
 &kp ESCAPE  &kp Q      &kp W     &kp E          &kp R                  &kp T                     &kp LC(DOWN_ARROW)   &kp Y                  &kp U                  &kp I      &kp O     &kp P          &kp MINUS
 &kp TAB     &kp A      &kp S     &kp D          &kp F                  &kp G                     &kp LC(RIGHT_ARROW)  &kp H                  &kp J                  &kp K      &kp L     &kp SEMICOLON  &kp APOS
 &kp LSHFT   &kp Z      &kp X     &kp C          &kp V                  &kp B                     &kp LC(LEFT_ARROW)   &kp N                  &kp M                  &kp COMMA  &kp DOT   &kp SLASH      &kp BACKSLASH
@@ -90,11 +90,11 @@
 
         Navi_Func {
             bindings = <
-&trans       &trans     &trans    &trans    &trans     &trans    &mmv MOVE_UP     &trans    &trans    &trans  &trans     &trans  &bt BT_SEL 0
-&trans       &trans     &trans    &trans    &trans     &trans    &mmv MOVE_DOWN   &trans    &trans    &trans  &trans     &trans  &bt BT_SEL 1
-&kp LS(TAB)  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &mmv MOVE_LEFT   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &bt BT_SEL 2
-&trans       &trans     &trans    &trans    &trans     &trans    &mmv MOVE_RIGHT  &trans    &trans    &trans  &trans     &trans  &trans
-&trans       &trans     &trans    &trans    &trans     &trans    &trans           &trans    &trans    &trans  &trans     &trans
+&trans       &kp F1     &kp F2    &kp F3          &kp F4        &kp F5    &mmv MOVE_UP     &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &bt BT_SEL 0
+&trans       &trans     &trans    &trans          &trans        &trans    &mmv MOVE_DOWN   &trans    &trans    &trans  &trans     &trans   &bt BT_SEL 1
+&kp LS(TAB)  &sk LCTRL  &sk LALT  &kp LEFT_SHIFT  &sk LEFT_GUI  &trans    &mmv MOVE_LEFT   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &bt BT_SEL 2
+&trans       &trans     &trans    &trans          &trans        &trans    &mmv MOVE_RIGHT  &trans    &trans    &trans  &trans     &trans   &trans
+&trans       &trans     &trans    &trans          &trans        &trans    &trans           &trans    &trans    &trans  &trans     &trans
             >;
 
             label = "Nav/Fn";
